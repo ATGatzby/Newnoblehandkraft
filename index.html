@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noble Handkraft — Export-quality handcrafted giftware and home decor. Brassware, metal artifacts, corporate gifting, and curated gift hampers.">
+    <meta name="keywords" content="handcrafted, home decor, giftware, brassware, corporate gifting, Noble Handkraft">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Noble Handkraft — Handcrafted | Heartfelt | Home">
+    <meta property="og:description" content="Export-quality handcrafted giftware and home decor">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ancorp.in">
+
+    <title>Noble Handkraft — Handcrafted | Heartfelt | Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ==================== PAGE LOADER ==================== -->
+    <div class="page-loader" id="pageLoader" aria-hidden="true">
+        <div class="loader-content">
+            <span class="loader-brand">Noble Handkraft</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <header class="navbar" id="navbar" role="banner">
+        <nav class="navbar__inner container" role="navigation" aria-label="Main navigation">
+            <a href="#hero" class="navbar__logo" aria-label="Noble Handkraft — Home">
+                <span class="navbar__logo-text">Noble Handkraft</span>
+            </a>
+
+            <button class="navbar__toggle" id="navToggle"
+                    aria-expanded="false"
+                    aria-controls="navMenu"
+                    aria-label="Toggle navigation menu">
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+                <span class="navbar__toggle-bar"></span>
+            </button>
+
+            <ul class="navbar__menu" id="navMenu" role="list">
+                <li><a href="#about" class="navbar__link">Our Story</a></li>
+                <li><a href="#categories" class="navbar__link">Collections</a></li>
+                <li><a href="#quality" class="navbar__link">Quality</a></li>
+                <li><a href="#corporate" class="navbar__link">Corporate Gifting</a></li>
+                <li><a href="#contact" class="navbar__link navbar__link--cta">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero" aria-label="Welcome">
+        <div class="hero__background" id="heroBackground"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <p class="hero__preheading reveal-fade">Est. with Passion</p>
+            <h1 class="hero__title reveal-fade" data-delay="200">
+                Noble<br>Handkraft
+            </h1>
+            <div class="hero__divider reveal-fade" data-delay="400"></div>
+            <p class="hero__tagline reveal-fade" data-delay="600">
+                Handcrafted&ensp;|&ensp;Heartfelt&ensp;|&ensp;Home
+            </p>
+            <p class="hero__subtitle reveal-fade" data-delay="800">
+                Export-quality handcrafted giftware &amp; home d&eacute;cor
+            </p>
+            <a href="#categories" class="btn btn--white hero__cta reveal-fade" data-delay="1000">
+                Explore Collections
+            </a>
+        </div>
+        <a href="#about" class="hero__scroll-indicator" aria-label="Scroll to learn more">
+            <span class="hero__scroll-text">Scroll</span>
+            <svg class="hero__scroll-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 4V16M10 16L4 10M10 16L16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <span class="section__label reveal-slide-up">Our Story</span>
+                    <h2 class="section__heading reveal-slide-up" id="about-heading">
+                        Where Craft<br>Meets Character
+                    </h2>
+                    <div class="section__divider reveal-slide-up"></div>
+                    <p class="about__text reveal-slide-up">
+                        Noble Handkraft was founded with a deep respect for artisanal heritage
+                        and a vision to present it through refined, contemporary design. We work
+                        closely with skilled artisans who bring generations of expertise into
+                        every piece they create.
+                    </p>
+                    <p class="about__text reveal-slide-up">
+                        Our products reflect a balance of tradition and modern aesthetics, making
+                        them suitable for homes, corporate gifting, hospitality, and international
+                        markets. Each creation carries warmth, purpose, and enduring value.
+                    </p>
+                </div>
+                <div class="about__image-area reveal-slide-up">
+                    <div class="placeholder-image placeholder-image--portrait placeholder-image--decorated">
+                        <span class="placeholder-image__label">Artisan at Work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORIES SECTION ==================== -->
+    <section class="section categories" id="categories" aria-labelledby="categories-heading">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__label reveal-slide-up">Collections</span>
+                <h2 class="section__heading reveal-slide-up" id="categories-heading">
+                    Our Craft Categories
+                </h2>
+                <div class="section__divider section__divider--center reveal-slide-up"></div>
+                <p class="section__subheading reveal-slide-up">
+                    Each category represents a tradition of excellence,
+                    refined for the modern connoisseur.
+                </p>
+            </div>
+
+            <div class="categories__grid">
+                <article class="category-card reveal-slide-up" data-delay="0">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4C12 4 8 10 8 16C8 24 14 28 14 34H26C26 28 32 24 32 16C32 10 28 4 20 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M14 34H26V37H14V34Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                            <span class="placeholder-image__label">Brassware</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Brassware &amp; Metal Artifacts</h3>
+                    <p class="category-card__desc">Heritage metalwork with contemporary finesse</p>
+                </article>
+
+                <article class="category-card reveal-slide-up" data-delay="100">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8V32M28 8V32M8 12H16M24 12H32M20 6V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span class="placeholder-image__label">Flatware</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Flatware &amp; Cutlery</h3>
+                    <p class="category-card__desc">Elegant dining essentials for every occasion</p>
+                </article>
+
+                <article class="category-card reveal-slide-up" data-delay="200">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="20" cy="30" rx="14" ry="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M6 30V18C6 12 12 8 20 8C28 8 34 12 34 18V30" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                            <span class="placeholder-image__label">Tabletop</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Tabletop Accessories</h3>
+                    <p class="category-card__desc">Refined accents for curated tablescapes</p>
+                </article>
+
+                <article class="category-card reveal-slide-up" data-delay="300">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="10" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M14 10V7H26V10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M20 16V24M16 20H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span class="placeholder-image__label">Gift Items</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Corporate &amp; Festive Gifts</h3>
+                    <p class="category-card__desc">Thoughtful gifts for meaningful occasions</p>
+                </article>
+
+                <article class="category-card reveal-slide-up" data-delay="400">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="6" width="28" height="28" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M20 12V14M20 26V28M28 20H26M14 20H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span class="placeholder-image__label">Wall Art</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Wall Hangings &amp; Accents</h3>
+                    <p class="category-card__desc">Statement pieces that transform spaces</p>
+                </article>
+
+                <article class="category-card reveal-slide-up" data-delay="500">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 34V14C14 10 16 8 20 8C24 8 26 10 26 14V34" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <ellipse cx="20" cy="34" rx="6" ry="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M17 20H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span class="placeholder-image__label">Barware</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Barware &amp; Bar Equipment</h3>
+                    <p class="category-card__desc">Crafted tools for the discerning host</p>
+                </article>
+
+                <article class="category-card reveal-slide-up" data-delay="600">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="12" width="24" height="16" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M12 18H20M12 22H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="27" cy="20" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                            <span class="placeholder-image__label">Desk Items</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Desk Accessories &amp; Utility</h3>
+                    <p class="category-card__desc">Functional artistry for inspired workspaces</p>
+                </article>
+
+                <article class="category-card reveal-slide-up" data-delay="700">
+                    <div class="category-card__image">
+                        <div class="placeholder-image placeholder-image--square">
+                            <svg class="placeholder-image__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="8" width="20" height="24" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M15 8V5M25 8V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M15 16H25M15 20H22M15 24H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <span class="placeholder-image__label">Gift Hampers</span>
+                        </div>
+                        <div class="category-card__overlay">
+                            <span class="category-card__explore">Explore</span>
+                        </div>
+                    </div>
+                    <h3 class="category-card__title">Curated Gift Hampers</h3>
+                    <p class="category-card__desc">Bespoke collections for every celebration</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== QUALITY SECTION ==================== -->
+    <section class="section quality" id="quality" aria-labelledby="quality-heading">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__label reveal-slide-up">Our Promise</span>
+                <h2 class="section__heading reveal-slide-up" id="quality-heading">
+                    Uncompromising Quality
+                </h2>
+                <div class="section__divider section__divider--center reveal-slide-up"></div>
+            </div>
+
+            <div class="quality__grid">
+                <div class="quality-item reveal-slide-up" data-delay="0">
+                    <div class="quality-item__icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 4L22 12L30 14L24 20L26 28L18 24L10 28L12 20L6 14L14 12L18 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+                            <path d="M18 10V18L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="quality-item__title">Artisan Crafted</h3>
+                    <p class="quality-item__text">
+                        Every piece passes through the hands of skilled artisans,
+                        ensuring meticulous attention to detail and character.
+                    </p>
+                </div>
+
+                <div class="quality-item reveal-slide-up" data-delay="150">
+                    <div class="quality-item__icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18" r="13" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            <path d="M10 18H26M18 10C14 14 14 22 18 26M18 10C22 14 22 22 18 26" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            <path d="M8 12H28M8 24H28" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="quality-item__title">Export Grade</h3>
+                    <p class="quality-item__text">
+                        Meeting international standards for finish,
+                        durability, and packaging excellence across markets.
+                    </p>
+                </div>
+
+                <div class="quality-item reveal-slide-up" data-delay="300">
+                    <div class="quality-item__icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 4L6 10V18C6 26 18 32 18 32C18 32 30 26 30 18V10L18 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+                            <path d="M13 18L16 21L23 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="quality-item__title">Premium Materials</h3>
+                    <p class="quality-item__text">
+                        Sourced brass, metals, and materials of the highest
+                        grade for lasting beauty and durability.
+                    </p>
+                </div>
+
+                <div class="quality-item reveal-slide-up" data-delay="450">
+                    <div class="quality-item__icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 28L14 20L20 26L30 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M24 8H30V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="quality-item__title">Bespoke Options</h3>
+                    <p class="quality-item__text">
+                        Custom finishes, engravings, and packaging
+                        tailored precisely to your vision and brand.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CORPORATE GIFTING SECTION ==================== -->
+    <section class="section corporate" id="corporate" aria-labelledby="corporate-heading">
+        <div class="container">
+            <div class="corporate__grid">
+                <div class="corporate__image-area reveal-slide-up">
+                    <div class="placeholder-image placeholder-image--landscape placeholder-image--decorated">
+                        <span class="placeholder-image__label">Corporate Gift Collection</span>
+                    </div>
+                </div>
+                <div class="corporate__content">
+                    <span class="section__label reveal-slide-up">For Business</span>
+                    <h2 class="section__heading reveal-slide-up" id="corporate-heading">
+                        Corporate Gifting<br>Solutions
+                    </h2>
+                    <div class="section__divider reveal-slide-up"></div>
+                    <p class="corporate__text reveal-slide-up">
+                        Elevate your corporate relationships with gifts that speak volumes.
+                        From festive occasions to client appreciation, our curated collections
+                        make lasting impressions.
+                    </p>
+                    <ul class="corporate__features reveal-slide-up">
+                        <li>Hospitality &amp; Real Estate Partnerships</li>
+                        <li>Festive &amp; Occasion-Based Gifting</li>
+                        <li>Custom Branding &amp; Packaging</li>
+                        <li>Bulk Order Capabilities</li>
+                        <li>Dedicated Account Management</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--outline reveal-slide-up">
+                        Discuss Your Requirements
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US SECTION ==================== -->
+    <section class="section why-us" id="why-us" aria-labelledby="why-us-heading">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__label reveal-slide-up">The Noble Difference</span>
+                <h2 class="section__heading reveal-slide-up" id="why-us-heading">
+                    Why Noble Handkraft
+                </h2>
+                <div class="section__divider section__divider--center reveal-slide-up"></div>
+            </div>
+
+            <div class="why-us__grid">
+                <div class="why-us__item reveal-slide-up" data-delay="0">
+                    <span class="why-us__number">01</span>
+                    <h3 class="why-us__title">Heritage Meets Innovation</h3>
+                    <p class="why-us__text">
+                        Traditional craftsmanship infused with contemporary
+                        design sensibility for timeless appeal.
+                    </p>
+                </div>
+                <div class="why-us__item reveal-slide-up" data-delay="100">
+                    <span class="why-us__number">02</span>
+                    <h3 class="why-us__title">Direct from Artisans</h3>
+                    <p class="why-us__text">
+                        We work directly with skilled craftspeople, ensuring
+                        authenticity and fair collaboration.
+                    </p>
+                </div>
+                <div class="why-us__item reveal-slide-up" data-delay="200">
+                    <span class="why-us__number">03</span>
+                    <h3 class="why-us__title">Global Standards</h3>
+                    <p class="why-us__text">
+                        Export-grade quality that meets international standards
+                        for finish, durability, and presentation.
+                    </p>
+                </div>
+                <div class="why-us__item reveal-slide-up" data-delay="300">
+                    <span class="why-us__number">04</span>
+                    <h3 class="why-us__title">End-to-End Customization</h3>
+                    <p class="why-us__text">
+                        From design to packaging, every element can be tailored
+                        to match your brand and vision.
+                    </p>
+                </div>
+                <div class="why-us__item reveal-slide-up" data-delay="400">
+                    <span class="why-us__number">05</span>
+                    <h3 class="why-us__title">Trusted by Industry</h3>
+                    <p class="why-us__text">
+                        A proven partner for hospitality, real estate, and
+                        corporate clients across markets.
+                    </p>
+                </div>
+                <div class="why-us__item reveal-slide-up" data-delay="500">
+                    <span class="why-us__number">06</span>
+                    <h3 class="why-us__title">Ethical Sourcing</h3>
+                    <p class="why-us__text">
+                        Committed to responsible practices that honor both
+                        craft traditions and our environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PHILOSOPHY SECTION ==================== -->
+    <section class="section philosophy" id="philosophy" aria-labelledby="philosophy-heading">
+        <div class="philosophy__background"></div>
+        <div class="container">
+            <div class="philosophy__content reveal-fade">
+                <span class="philosophy__icon">&#8220;</span>
+                <blockquote class="philosophy__quote" id="philosophy-heading">
+                    We believe a gift should do more than impress &mdash;
+                    it should carry meaning, warmth, and lasting value.
+                    Every Noble Handkraft product is a reflection of
+                    thoughtful design, skilled craftsmanship,
+                    and heartfelt intent.
+                </blockquote>
+                <cite class="philosophy__attribution">
+                    &mdash; The Noble Handkraft Philosophy
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <span class="section__label reveal-slide-up">Reach Out</span>
+                    <h2 class="section__heading reveal-slide-up" id="contact-heading">
+                        Let's Create<br>Something Beautiful
+                    </h2>
+                    <div class="section__divider reveal-slide-up"></div>
+                    <p class="contact__text reveal-slide-up">
+                        Whether you're looking for the perfect corporate gift,
+                        a bespoke home d&eacute;cor piece, or a curated hamper,
+                        we'd love to hear from you.
+                    </p>
+
+                    <div class="contact__details reveal-slide-up">
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                    <path d="M2 6L10 11L18 6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <a href="mailto:info@ancorp.in">info@ancorp.in</a><br>
+                                <a href="mailto:ancorp100@gmail.com">ancorp100@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 4C3 3.45 3.45 3 4 3H7.28C7.74 3 8.14 3.33 8.24 3.78L9.07 7.32C9.16 7.72 9 8.14 8.66 8.36L7.22 9.3C8.36 11.62 10.38 13.64 12.7 14.78L13.64 13.34C13.86 13 14.28 12.84 14.68 12.93L18.22 13.76C18.67 13.86 19 14.26 19 14.72V18C19 18.55 18.55 19 18 19C9.72 19 3 12.28 3 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <a href="tel:+919217803268">+91 9217803268</a><br>
+                                <a href="tel:+919999411119">+91 9999411119</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                    <circle cx="14.5" cy="5.5" r="1" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            <a href="https://instagram.com/noblehandkraft" target="_blank" rel="noopener noreferrer">
+                                @noblehandkraft
+                            </a>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                    <path d="M4 10H16M10 4C8 6.5 8 13.5 10 16M10 4C12 6.5 12 13.5 10 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                </svg>
+                            </span>
+                            <a href="https://www.ancorp.in" target="_blank" rel="noopener noreferrer">
+                                www.ancorp.in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__form-wrapper reveal-slide-up">
+                    <form class="contact-form" id="contactForm" action="#" method="POST" novalidate>
+                        <div class="contact-form__group">
+                            <label for="contactName" class="contact-form__label">Full Name</label>
+                            <input type="text" id="contactName" name="name"
+                                   class="contact-form__input"
+                                   required autocomplete="name"
+                                   placeholder="Your name">
+                            <span class="contact-form__error" aria-live="polite"></span>
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="contactEmail" class="contact-form__label">Email Address</label>
+                            <input type="email" id="contactEmail" name="email"
+                                   class="contact-form__input"
+                                   required autocomplete="email"
+                                   placeholder="your@email.com">
+                            <span class="contact-form__error" aria-live="polite"></span>
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="contactPhone" class="contact-form__label">
+                                Phone Number <span class="optional">(Optional)</span>
+                            </label>
+                            <input type="tel" id="contactPhone" name="phone"
+                                   class="contact-form__input"
+                                   autocomplete="tel"
+                                   placeholder="+91 XXXXX XXXXX">
+                            <span class="contact-form__error" aria-live="polite"></span>
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="contactInterest" class="contact-form__label">Interest Area</label>
+                            <select id="contactInterest" name="interest" class="contact-form__select">
+                                <option value="" disabled selected>Select your interest</option>
+                                <option value="corporate">Corporate Gifting</option>
+                                <option value="home-decor">Home D&eacute;cor</option>
+                                <option value="brassware">Brassware &amp; Metals</option>
+                                <option value="custom">Custom / Bespoke Orders</option>
+                                <option value="bulk">Bulk Orders</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__group">
+                            <label for="contactMessage" class="contact-form__label">Message</label>
+                            <textarea id="contactMessage" name="message"
+                                      class="contact-form__textarea"
+                                      required rows="5"
+                                      placeholder="Tell us about your requirements..."></textarea>
+                            <span class="contact-form__error" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary contact-form__submit">
+                            Send Inquiry
+                        </button>
+                        <div class="contact-form__status" id="formStatus" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__logo">Noble Handkraft</span>
+                    <p class="footer__tagline">Handcrafted | Heartfelt | Home</p>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Navigate</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#categories">Collections</a></li>
+                        <li><a href="#quality">Quality</a></li>
+                        <li><a href="#corporate">Corporate Gifting</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Categories</h4>
+                    <ul>
+                        <li><a href="#categories">Brassware</a></li>
+                        <li><a href="#categories">Flatware</a></li>
+                        <li><a href="#categories">Tabletop</a></li>
+                        <li><a href="#categories">Barware</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h4 class="footer__heading">Connect</h4>
+                    <div class="footer__social-links">
+                        <a href="https://instagram.com/noblehandkraft" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="11" cy="11" r="4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="16" cy="6" r="1.2" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:info@ancorp.in" aria-label="Email Noble Handkraft">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <path d="M2 6L11 12L20 6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </a>
+                        <a href="tel:+919217803268" aria-label="Call Noble Handkraft">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 4C3 3.45 3.45 3 4 3H8.28C8.74 3 9.14 3.33 9.24 3.78L10.07 7.32C10.16 7.72 10 8.14 9.66 8.36L8.22 9.3C9.36 11.62 11.38 13.64 13.7 14.78L14.64 13.34C14.86 13 15.28 12.84 15.68 12.93L19.22 13.76C19.67 13.86 20 14.26 20 14.72V19C20 19.55 19.55 20 19 20C10.72 20 3 13.28 3 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; <span class="footer__year">2026</span> Noble Handkraft. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="#" onclick="return false;">Privacy Policy</a>
+                    <span class="footer__separator">|</span>
+                    <a href="#" onclick="return false;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/navigation.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/parallax.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

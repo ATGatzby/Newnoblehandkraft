@@ -1,0 +1,78 @@
+/* ============================================
+   NOBLE HANDKRAFT — Layout System
+   ============================================ */
+
+/* === Container === */
+.container {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+}
+
+/* === Section Spacing === */
+.section {
+    padding-block: var(--space-section);
+    position: relative;
+}
+
+/* === Alternating Backgrounds === */
+.categories,
+.why-us {
+    background-color: var(--color-surface-warm);
+}
+
+/* === Scroll Offset for Fixed Navbar === */
+.section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* === About Grid === */
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+/* === Categories Grid === */
+.categories__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+}
+
+/* === Quality Grid === */
+.quality__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+}
+
+/* === Corporate Grid === */
+.corporate__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+/* === Why Us Grid === */
+.why-us__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+}
+
+/* === Contact Grid === */
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+}
+
+/* === Footer Grid === */
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
