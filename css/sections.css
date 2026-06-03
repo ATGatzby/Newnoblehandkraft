@@ -68,9 +68,7 @@
 .hero__background {
     position: absolute;
     inset: -50px;
-    background-image: url('../Assets/images/NHK_homepage1.jpg');
-    background-size: cover;
-    background-position: center;
+    background: var(--color-primary-dark);
     z-index: 0;
 }
 
