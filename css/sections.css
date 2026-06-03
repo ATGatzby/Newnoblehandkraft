@@ -68,7 +68,7 @@
 .hero__background {
     position: absolute;
     inset: -50px;
-    background: var(--color-primary-dark);
+    background: #0f0f0f;
     z-index: 0;
 }
 
@@ -96,12 +96,7 @@
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(26, 26, 26, 0.55) 0%,
-        rgba(26, 26, 26, 0.35) 40%,
-        rgba(26, 26, 26, 0.65) 100%
-    );
+    background: transparent;
     z-index: 1;
 }
 
