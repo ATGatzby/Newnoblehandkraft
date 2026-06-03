@@ -35,9 +35,92 @@ document.addEventListener('DOMContentLoaded', function () {
         initContactForm();
     }
 
+    // Hero Particles
+    initHeroParticles();
+
+    // Privacy Policy Modal
+    initPrivacyModal();
+
+    // Terms of Service Modal
+    initTermsModal();
+
     // Dynamic copyright year
     var yearEl = document.querySelector('.footer__year');
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
     }
 });
+
+function initTermsModal() {
+    var modal    = document.getElementById('termsModal');
+    var link     = document.getElementById('termsOfServiceLink');
+    var closeBtn = document.getElementById('termsModalClose');
+    var backdrop = document.getElementById('termsModalBackdrop');
+
+    if (!modal || !link) return;
+
+    function openModal() {
+        modal.classList.add('policy-modal--open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        modal.classList.remove('policy-modal--open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        link.focus();
+    }
+
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        openModal();
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('policy-modal--open')) {
+            closeModal();
+        }
+    });
+}
+
+function initPrivacyModal() {
+    var modal    = document.getElementById('privacyModal');
+    var link     = document.getElementById('privacyPolicyLink');
+    var closeBtn = document.getElementById('privacyModalClose');
+    var backdrop = document.getElementById('privacyModalBackdrop');
+
+    if (!modal || !link) return;
+
+    function openModal() {
+        modal.classList.add('policy-modal--open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        modal.classList.remove('policy-modal--open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        link.focus();
+    }
+
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        openModal();
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('policy-modal--open')) {
+            closeModal();
+        }
+    });
+}

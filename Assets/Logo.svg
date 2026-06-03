@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="94" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.6"/>
+  <!-- Inner ring -->
+  <circle cx="100" cy="100" r="82" stroke="currentColor" stroke-width="0.6" fill="none" opacity="0.35"/>
+
+  <!-- Corner diamond ornaments at 4 compass points -->
+  <polygon points="100,4 104,12 100,8 96,12" fill="currentColor" opacity="0.7"/>
+  <polygon points="100,196 104,188 100,192 96,188" fill="currentColor" opacity="0.7"/>
+  <polygon points="4,100 12,96 8,100 12,104" fill="currentColor" opacity="0.7"/>
+  <polygon points="196,100 188,96 192,100 188,104" fill="currentColor" opacity="0.7"/>
+
+  <!-- N letter (serif-style, hand-drawn feel) -->
+  <g fill="currentColor">
+    <!-- N left stem -->
+    <rect x="44" y="62" width="7" height="76" rx="1"/>
+    <!-- N diagonal stroke -->
+    <polygon points="51,62 58,62 97,118 97,138 90,138 51,82"/>
+    <!-- N right stem -->
+    <rect x="90" y="62" width="7" height="76" rx="1"/>
+  </g>
+
+  <!-- H letter (serif-style) -->
+  <g fill="currentColor">
+    <!-- H left stem -->
+    <rect x="108" y="62" width="7" height="76" rx="1"/>
+    <!-- H crossbar -->
+    <rect x="108" y="95" width="37" height="6" rx="1"/>
+    <!-- H right stem -->
+    <rect x="145" y="62" width="7" height="76" rx="1"/>
+  </g>
+
+  <!-- Thin decorative line below letters -->
+  <line x1="60" y1="148" x2="140" y2="148" stroke="currentColor" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Tiny text "NOBLE HANDKRAFT" — decorative arc suggestion via straight text -->
+  <text x="100" y="168"
+        font-family="Georgia, serif"
+        font-size="9.5"
+        font-weight="400"
+        letter-spacing="3.5"
+        text-anchor="middle"
+        fill="currentColor"
+        opacity="0.75">NOBLE HANDKRAFT</text>
+</svg>

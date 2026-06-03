@@ -3,22 +3,22 @@
    ============================================ */
 
 :root {
-    /* === Colors === */
-    --color-primary-dark: #1a1a1a;
-    --color-primary-light: #faf8f5;
-    --color-accent: #c9a96e;
-    --color-accent-light: #d4ba85;
-    --color-accent-dark: #b08d4a;
+    /* === Colors — Heritage Luxury === */
+    --color-primary-dark: #0f0f0f;
+    --color-primary-light: #fefdfb;
+    --color-accent: #d4af37;
+    --color-accent-light: #e2c55c;
+    --color-accent-dark: #b08d20;
     --color-text-primary: #1a1a1a;
-    --color-text-secondary: #6b6560;
-    --color-text-light: #faf8f5;
+    --color-text-secondary: #5a5450;
+    --color-text-light: #fefdfb;
     --color-text-muted: #9a9490;
     --color-border: rgba(26, 26, 26, 0.1);
-    --color-border-gold: rgba(201, 169, 110, 0.3);
+    --color-border-gold: rgba(212, 175, 55, 0.3);
     --color-surface: #ffffff;
-    --color-surface-warm: #f5f0eb;
-    --color-overlay-dark: rgba(26, 26, 26, 0.6);
-    --color-overlay-gold: rgba(201, 169, 110, 0.1);
+    --color-surface-warm: #f7f4ef;
+    --color-overlay-dark: rgba(15, 15, 15, 0.65);
+    --color-overlay-gold: rgba(212, 175, 55, 0.1);
 
     /* === Typography === */
     --font-heading: 'Playfair Display', 'Georgia', serif;
@@ -80,5 +80,6 @@
     --z-base: 1;
     --z-navbar: 100;
     --z-overlay: 200;
+    --z-modal: 300;
     --z-loader: 1000;
 }

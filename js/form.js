@@ -111,37 +111,51 @@ function initContactForm() {
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
 
-        // Simulate submission
-        // TODO: Replace with actual API endpoint / email service integration
-        setTimeout(function () {
+        // Submit to Formspree
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        }).then(function (response) {
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
 
-            statusEl.className = 'contact-form__status contact-form__status--success';
-            statusEl.textContent = 'Thank you for your inquiry. We\'ll get back to you within 24 hours.';
+            if (response.ok) {
+                statusEl.className = 'contact-form__status contact-form__status--success';
+                statusEl.textContent = 'Thank you for your inquiry. We\'ll get back to you within 24 hours.';
+                form.reset();
 
-            form.reset();
+                // Clear validation styles
+                Object.keys(fields).forEach(function (key) {
+                    var field = fields[key];
+                    if (field.el) {
+                        field.el.classList.remove(
+                            'contact-form__input--valid',
+                            'contact-form__input--error',
+                            'contact-form__textarea--valid',
+                            'contact-form__textarea--error'
+                        );
+                        var errorEl = field.el.parentElement.querySelector('.contact-form__error');
+                        if (errorEl) errorEl.textContent = '';
+                    }
+                });
 
-            // Clear validation styles
-            Object.keys(fields).forEach(function (key) {
-                var field = fields[key];
-                if (field.el) {
-                    field.el.classList.remove(
-                        'contact-form__input--valid',
-                        'contact-form__input--error',
-                        'contact-form__textarea--valid',
-                        'contact-form__textarea--error'
-                    );
-                    var errorEl = field.el.parentElement.querySelector('.contact-form__error');
-                    if (errorEl) errorEl.textContent = '';
-                }
-            });
-
-            // Hide success message after 5 seconds
-            setTimeout(function () {
-                statusEl.className = 'contact-form__status';
-                statusEl.textContent = '';
-            }, 5000);
-        }, 1500);
+                // Hide success message after 5 seconds
+                setTimeout(function () {
+                    statusEl.className = 'contact-form__status';
+                    statusEl.textContent = '';
+                }, 5000);
+            } else {
+                statusEl.className = 'contact-form__status contact-form__status--error';
+                statusEl.textContent = 'Something went wrong. Please try again or email us directly.';
+            }
+        }).catch(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+            statusEl.className = 'contact-form__status contact-form__status--error';
+            statusEl.textContent = 'Network error. Please check your connection and try again.';
+        });
     });
 }

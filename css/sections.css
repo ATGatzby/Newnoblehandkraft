@@ -68,14 +68,9 @@
 .hero__background {
     position: absolute;
     inset: -50px;
-    background:
-        linear-gradient(135deg,
-            #1a1a1a 0%,
-            #2d2520 25%,
-            #3a2e24 40%,
-            #2d2520 60%,
-            #1a1a1a 100%
-        );
+    background-image: url('../Assets/images/NHK_homepage1.jpg');
+    background-size: cover;
+    background-position: center;
     z-index: 0;
 }
 
@@ -105,9 +100,9 @@
     inset: 0;
     background: linear-gradient(
         180deg,
-        rgba(26, 26, 26, 0.3) 0%,
-        rgba(26, 26, 26, 0.1) 40%,
-        rgba(26, 26, 26, 0.4) 100%
+        rgba(26, 26, 26, 0.55) 0%,
+        rgba(26, 26, 26, 0.35) 40%,
+        rgba(26, 26, 26, 0.65) 100%
     );
     z-index: 1;
 }
@@ -117,6 +112,19 @@
     z-index: 2;
     text-align: center;
     padding-block: var(--space-3xl);
+}
+
+/* === Hero Logo Emblem === */
+.hero__emblem {
+    height: 72px;
+    margin: var(--space-xs) auto var(--space-xs);
+}
+
+.hero__emblem-img {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero__preheading {
@@ -137,7 +145,7 @@
     line-height: 1.05;
     letter-spacing: -0.03em;
     color: var(--color-text-light);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xs);
 }
 
 .hero__divider {
@@ -287,13 +295,30 @@
     padding-bottom: var(--space-lg);
 }
 
-.footer__logo {
+.footer__logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: var(--space-sm);
+}
+
+.footer__logo-mark {
+    height: 44px;
+    flex-shrink: 0;
+}
+
+.footer__logo-img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.footer__logo-name {
     font-family: var(--font-heading);
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: var(--fw-semibold);
     color: var(--color-text-light);
-    display: block;
-    margin-bottom: var(--space-xs);
+    letter-spacing: 0.02em;
 }
 
 .footer__tagline {
