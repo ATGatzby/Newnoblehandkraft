@@ -209,6 +209,9 @@
    CATEGORY CARDS
    ========================================== */
 .category-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: var(--color-surface);
     border-radius: var(--radius-md);
     overflow: hidden;
