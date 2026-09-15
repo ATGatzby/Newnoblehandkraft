@@ -1,2 +1,5 @@
 User-agent: *
+Allow: /
 Disallow: /Future/
+
+Sitemap: https://noblehandkraft.com/sitemap.xml
