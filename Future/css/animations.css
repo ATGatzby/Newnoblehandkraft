@@ -1,0 +1,56 @@
+/* ============================================
+   NOBLE HANDKRAFT — Animations
+   ============================================ */
+
+/* === Scroll-Triggered Reveal States === */
+.reveal-fade,
+.reveal-slide-up,
+.reveal-slide-left {
+    opacity: 0;
+    transition: opacity var(--transition-reveal),
+                transform var(--transition-reveal);
+    will-change: opacity, transform;
+}
+
+.reveal-slide-up {
+    transform: translateY(40px);
+}
+
+.reveal-slide-left {
+    transform: translateX(-40px);
+}
+
+/* === Active State === */
+.reveal-fade.is-visible,
+.reveal-slide-up.is-visible,
+.reveal-slide-left.is-visible {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* === Reduced Motion === */
+@media (prefers-reduced-motion: reduce) {
+    .reveal-fade,
+    .reveal-slide-up,
+    .reveal-slide-left {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .hero__scroll-indicator {
+        animation: none;
+    }
+
+    .loader-line {
+        animation: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

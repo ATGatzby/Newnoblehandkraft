@@ -1,0 +1,200 @@
+/* ============================================
+   NOBLE HANDKRAFT — Holding Page
+   Temporary root placeholder during the rebuild.
+   ============================================ */
+
+.placeholder-body {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light);
+}
+
+.placeholder {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl) var(--container-padding);
+    overflow: hidden;
+}
+
+/* === Ambient gold wash === */
+.placeholder__glow {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(140vw, 1100px);
+    aspect-ratio: 1;
+    max-width: 100%;
+    background: radial-gradient(
+        circle at center,
+        rgba(212, 175, 55, 0.12) 0%,
+        rgba(212, 175, 55, 0.04) 38%,
+        transparent 68%
+    );
+    pointer-events: none;
+    z-index: var(--z-base);
+}
+
+.placeholder__inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 640px;
+    margin: auto;
+}
+
+/* === Eyebrow === */
+.placeholder__label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: var(--fs-label);
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-label);
+    color: var(--color-accent);
+    margin-bottom: var(--space-lg);
+}
+
+/* === Wordmark === */
+.placeholder__wordmark {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-heading);
+    letter-spacing: var(--ls-heading);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+}
+
+/* === Tagline === */
+.placeholder__tagline {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-medium);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-wide);
+    color: var(--color-accent);
+    max-width: none;
+    margin: 0;
+}
+
+.placeholder__tagline span {
+    color: var(--color-border-gold);
+    margin: 0 0.5em;
+}
+
+/* === Divider === */
+.placeholder__divider {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-accent);
+    margin: var(--space-lg) auto;
+    opacity: 0.7;
+}
+
+/* === Holding message === */
+.placeholder__message {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-light);
+    color: var(--color-text-muted);
+    max-width: 44ch;
+    margin: 0 auto var(--space-lg);
+}
+
+/* === Contact === */
+.placeholder__contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-small);
+    letter-spacing: 0.02em;
+}
+
+.placeholder__contact a {
+    color: var(--color-text-light);
+    border-bottom: 1px solid var(--color-border-gold);
+    padding-bottom: 2px;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.placeholder__contact a:hover,
+.placeholder__contact a:focus-visible {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+.placeholder__sep {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    opacity: 0.5;
+}
+
+/* === Footer === */
+.placeholder__footer {
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+    padding-top: var(--space-xl);
+    font-size: var(--fs-label);
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+.placeholder__footer p {
+    color: inherit;
+    max-width: none;
+    margin: 0;
+}
+
+/* === Entrance === */
+.placeholder__inner > * {
+    animation: placeholder-rise var(--transition-reveal) both;
+}
+
+.placeholder__label      { animation-delay: 80ms; }
+.placeholder__wordmark   { animation-delay: 180ms; }
+.placeholder__tagline    { animation-delay: 280ms; }
+.placeholder__divider    { animation-delay: 380ms; }
+.placeholder__message    { animation-delay: 460ms; }
+.placeholder__contact    { animation-delay: 540ms; }
+
+@keyframes placeholder-rise {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .placeholder__inner > * {
+        animation: none;
+    }
+}
+
+/* === Narrow screens === */
+@media (max-width: 480px) {
+    .placeholder__tagline span {
+        margin: 0 0.3em;
+    }
+
+    .placeholder__contact {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+
+    .placeholder__sep {
+        display: none;
+    }
+}

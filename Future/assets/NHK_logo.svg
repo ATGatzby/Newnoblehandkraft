@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 300" fill="#d4af37">
+
+  <!-- ═══════════════════════════════
+       PRODUCT ICONS ROW
+  ══════════════════════════════════ -->
+
+  <!-- 1. Candlestick (cx=68) -->
+  <path d="M 68 12 C 65 17 64 22 66 26 C 67 28 69 28 70 26 C 72 22 71 17 68 12 Z"/>
+  <rect x="65" y="26" width="6" height="20" rx="1"/>
+  <path d="M 65 29 C 63 31 62 35 63 37 C 63.5 38 64.5 38 64.5 37 Z" opacity="0.55"/>
+  <rect x="60" y="46" width="16" height="3" rx="1.5"/>
+  <rect x="63" y="49" width="10" height="2" rx="1"/>
+
+  <!-- 2. Wine Glass left (cx=104) -->
+  <path d="M 96 46 C 96 54 99.5 60 104 62 C 108.5 60 112 54 112 46 Z"/>
+  <rect x="96" y="44" width="16" height="3" rx="1.5"/>
+  <rect x="103" y="62" width="2.5" height="12" rx="1"/>
+  <rect x="97" y="74" width="14" height="3" rx="1.5"/>
+
+  <!-- 3. Throne / Chair (cx=140, tallest — centrepiece) -->
+  <path d="M 128 68 L 128 28 C 128 20 140 15 140 15 C 140 15 152 20 152 28 L 152 68 Z"/>
+  <rect x="124" y="50" width="6" height="18" rx="1"/>
+  <rect x="150" y="50" width="6" height="18" rx="1"/>
+  <rect x="124" y="66" width="32" height="8" rx="1.5"/>
+  <rect x="126" y="74" width="5" height="7" rx="1"/>
+  <rect x="149" y="74" width="5" height="7" rx="1"/>
+
+  <!-- 4. Gift Box (cx=176) -->
+  <rect x="169" y="54" width="14" height="3" rx="1"/>
+  <rect x="170" y="57" width="12" height="15" rx="1"/>
+  <path d="M 176 54 C 173 51 169 47 171 44 C 172 42 176 44 176 54 Z" opacity="0.85"/>
+  <path d="M 176 54 C 179 51 183 47 181 44 C 180 42 176 44 176 54 Z" opacity="0.85"/>
+  <circle cx="176" cy="54" r="2.5"/>
+
+  <!-- 5. Tea Cup (cx=210) -->
+  <path d="M 201 60 C 201 67 205 72 210 72 C 215 72 219 67 219 60 Z"/>
+  <ellipse cx="210" cy="60" rx="9" ry="3.5"/>
+  <path d="M 219 63 C 225 63 227 70 223 73 C 221 75 219 74 219 71" stroke="#d4af37" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="210" cy="74" rx="11" ry="3" opacity="0.6"/>
+
+  <!-- Separator line -->
+  <line x1="50" y1="83" x2="230" y2="83" stroke="#d4af37" stroke-width="0.8" opacity="0.45"/>
+
+
+  <!-- ═══════════════════════════════
+       HAND MARK
+       Wrist base y≈205, finger tips y≈90
+       Palm width ≈78px, wrist ≈26px
+  ══════════════════════════════════ -->
+  <path fill-rule="evenodd" d="
+    M 127 205
+    C 112 205 103 194 100 179
+    L 97 152
+    C 95 138 95 123 98 111
+    C 101 99 110 91 120 92
+    C 125 92 129 97 131 104
+    C 131 93 134 84 140 81
+    C 146 78 154 83 155 96
+    C 158 86 164 80 171 83
+    C 178 86 178 100 174 115
+    L 170 136
+    C 174 128 180 123 186 126
+    C 192 129 191 143 186 155
+    L 175 178
+    C 169 193 158 205 143 205
+    Z
+
+    M 140 194
+    C 137 182 131 165 133 147
+    C 135 129 138 114 140 103
+    C 142 114 145 129 147 147
+    C 149 165 143 182 140 194
+    Z
+  "/>
+
+
+  <!-- ═══════════════════════════════
+       WORDMARK
+  ══════════════════════════════════ -->
+  <line x1="60" y1="218" x2="220" y2="218" stroke="#d4af37" stroke-width="0.6" opacity="0.35"/>
+
+  <text x="140" y="237"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="18"
+        font-weight="bold"
+        letter-spacing="4"
+        text-anchor="middle"
+        fill="#d4af37">NOBLE HANDKRAFT</text>
+
+  <line x1="60" y1="244" x2="220" y2="244" stroke="#d4af37" stroke-width="0.6" opacity="0.35"/>
+
+  <text x="140" y="260"
+        font-family="Georgia, serif"
+        font-size="8"
+        letter-spacing="2.5"
+        text-anchor="middle"
+        fill="#d4af37"
+        opacity="0.72">Handcrafted  ·  Heartfelt  ·  Home</text>
+
+</svg>

@@ -1,0 +1,146 @@
+/* ============================================
+   NOBLE HANDKRAFT — Responsive Breakpoints
+   ============================================ */
+
+/* === Tablet Portrait (768px+) === */
+@media (min-width: 768px) {
+    .about__grid {
+        grid-template-columns: 55fr 45fr;
+    }
+
+    .categories__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quality__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .corporate__grid {
+        grid-template-columns: 45fr 55fr;
+    }
+
+    .why-us__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* === Desktop (992px+) === */
+@media (min-width: 992px) {
+    .categories__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .quality__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .why-us__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+
+    /* Desktop Navigation */
+    .navbar__toggle {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-lg);
+        background: none;
+        width: auto;
+        height: auto;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .navbar__link {
+        font-size: var(--fs-small);
+        padding: 0;
+    }
+}
+
+/* === Large Desktop (1200px+) === */
+@media (min-width: 1200px) {
+    .about__grid {
+        gap: var(--space-3xl);
+    }
+
+    .corporate__grid {
+        gap: var(--space-3xl);
+    }
+
+    .contact__grid {
+        gap: var(--space-3xl);
+    }
+}
+
+/* === Mobile Landscape (576px+) === */
+@media (min-width: 576px) and (max-width: 767px) {
+    .categories__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quality__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* === Mobile Only (below 768px) === */
+@media (max-width: 767px) {
+    .hero__title {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+
+    .philosophy__quote {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+    }
+
+    .philosophy__icon {
+        font-size: 60px;
+    }
+
+    .corporate__image-area {
+        order: -1;
+    }
+
+    .why-us__item {
+        padding-left: var(--space-lg);
+        border-left: 2px solid var(--color-border-gold);
+        border-right: none;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: var(--space-sm);
+        text-align: center;
+    }
+}
+
+/* === Touch Target Sizing === */
+@media (pointer: coarse) {
+    .navbar__link,
+    .footer a,
+    .contact__detail a {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
